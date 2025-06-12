@@ -5,7 +5,7 @@ import json
 sns_client = boto3.client('sns')
 
 # Your SNS Topic ARN
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:677276109444:email'
+SNS_TOPIC_ARN = 'add your-arn:aws:sns'
 
 def lambda_handler(event, context):
     # Log the full event for debugging
