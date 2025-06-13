@@ -1,3 +1,44 @@
+# AWS S3 Event-Driven Notification System
+
+This project implements a serverless event-driven architecture using AWS services. It monitors an S3 bucket for object creation events, triggers a Lambda function, and sends email notifications using SNS (Simple Notification Service).
+
+## 🧰 Tech Stack
+
+- AWS S3 (Simple Storage Service)
+- AWS Lambda
+- AWS SNS
+- AWS CloudWatch
+- AWS IAM
+- AWS CLI
+
+## 🚀 Architecture
+
+1. An object is uploaded to the S3 bucket.
+2. S3 triggers the Lambda function via event notification.
+3. Lambda processes the event and publishes a message to an SNS topic.
+4. SNS sends an email notification to subscribed recipients.
+
+## 📝 Features
+
+- Real-time notifications for new S3 object uploads.
+- Fully serverless and event-driven.
+- S3 bucket versioning enabled for safe object management.
+- CloudWatch logging for monitoring Lambda executions.
+
+## 🔐 IAM Roles and Permissions
+
+- Lambda execution role with:
+  - `AWSLambdaBasicExecutionRole` (for CloudWatch logging)
+  - `sns:Publish` permission for SNS topic access
+
+## 🔧 Deployment Steps
+
+1. Create S3 bucket with versioning enabled.
+2. Create SNS topic and subscribe email.
+3. Create IAM role for Lambda with appropriate permissions.
+4. Deploy Lambda function with S3 trigger.
+5. Upload objects to S3 and monitor email notifications.
+
 Create a sample Cloud Formation template for creating the S3 bucket.
 ![image](https://github.com/user-attachments/assets/2e6e5333-4705-4d5e-9f97-4adacca9fee3)
 
