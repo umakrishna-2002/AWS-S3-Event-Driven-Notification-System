@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Minimal template to create a versioned S3 bucket.
+
+Resources:
+  MyVersionedBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: 'umas3-bucket'
+      VersioningConfiguration:
+        Status: Enabled
