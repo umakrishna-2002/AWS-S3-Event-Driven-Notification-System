@@ -2,6 +2,8 @@
 
 This project implements a serverless event-driven architecture using AWS services. It monitors an S3 bucket for object creation events, triggers a Lambda function, and sends email notifications using SNS (Simple Notification Service).
 
+![image](https://github.com/user-attachments/assets/8752f15a-2954-48fd-aceb-cca8bd5f89d8)
+
 ## 🧰 Tech Stack
 
 - AWS S3 (Simple Storage Service)
