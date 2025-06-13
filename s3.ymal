@@ -5,6 +5,6 @@ Resources:
   MyVersionedBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 'umas3-bucket'
+      BucketName: 'enter your bucket name'
       VersioningConfiguration:
         Status: Enabled
